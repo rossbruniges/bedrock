@@ -10,7 +10,6 @@ of terms and example values for them:
 """
 
 from os import path
-import re
 
 import jinja2
 import jingo
