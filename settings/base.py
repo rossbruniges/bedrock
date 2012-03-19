@@ -79,12 +79,15 @@ MINIFY_BUNDLES = {
         'persona': (
             'css/persona.less',
         ),
-        'styleguide': (
-            'css/sandstone/sandstone.less',
-            'css/sandstone/styleguide.less',
+        'sandstone-guide': (
+            'css/sandstone-guide.less',
         ),
         'video': (
             'css/sandstone/video.less',
+        ),
+        'landing_devices': (
+            'css/landing/devices.less',
+            'css/firefox/template.less'
         ),
     },
     'js': {
@@ -109,6 +112,16 @@ MINIFY_BUNDLES = {
         ),
         'video': (
             'js/mozilla-video-tools.js',
+        ),
+        'landing_devices': (
+            'js/libs/jquery-1.4.4.min.js',
+            'js/libs/jquery-css-transform.js',
+            'js/libs/jquery-animate-css-rotate-scale.js',
+            'js/site.js',
+            'js/nav-main.js',
+            'js/libs/jquery.cycle.all.js',
+            'js/libs/jquery.ba-hashchange.min.js',
+            'js/landing/devices.js'
         ),
     }
 }
@@ -144,6 +157,7 @@ INSTALLED_APPS = list(INSTALLED_APPS) + [
     'marketplace',
     'mozorg',
     'persona',
+    'landing',
     'research',
 
     # libs

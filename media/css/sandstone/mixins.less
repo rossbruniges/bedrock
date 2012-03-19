@@ -21,6 +21,8 @@
 .transition(@transition: all linear .25s) {
   -webkit-transition: @transition;
   -moz-transition: @transition;
+  -o-transition: @transition;
+  -ms-transition: @transition;
   transition: @transition;
 }
 
@@ -136,4 +138,14 @@
     .offset10  { #gridSystem > .offset(@gridColumnWidth, @gridGutterWidth, 10); }
     .offset11  { #gridSystem > .offset(@gridColumnWidth, @gridGutterWidth, 11); }
   }
+}
+
+.span(@columns) {
+    float: left;
+    margin-left: @gridGutterWidth;
+    width: (@gridColumnWidth * @columns) + (@gridGutterWidth * (@columns - 1));
+}
+
+.offset(@columns) {
+    margin-left: (@gridColumnWidth * @columns) + (@gridGutterWidth * (@columns - 1)) + (@gridGutterWidth * 2);
 }
