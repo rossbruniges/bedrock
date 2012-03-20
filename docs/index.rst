@@ -19,29 +19,21 @@ Contents
 .. toctree::
    :maxdepth: 1
 
+   install
    l10n
    php
-   
+
+
+Installation
+------------
+
+Need to install bedrock? :ref:`Read this<install>` for instructions.
 
 Localization
 ------------
 
 Looking for help on how l10n works on bedrock? :ref:`Look here <l10n>`
 for more details.
-
-Installation
-------------
-
-It's a simple `Playdoh
-<http://playdoh.readthedocs.org/en/latest/index.html>`_ instance, and
-works like django.::
-
-    git clone --recursive git://github.com/mozilla/bedrock.git
-    cd bedrock
-    cp settings/local.py-dist settings/local.py
-    ./manage.py runserver
-
-This section will be expounded soon.
 
 PHP
 ---
