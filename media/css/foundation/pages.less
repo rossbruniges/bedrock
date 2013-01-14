@@ -1,0 +1,61 @@
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+@import "../sandstone/lib.less";
+
+#masthead {
+    nav.breadcrumbs {
+        float: none;
+        padding-left: 0;
+        ol {
+            margin-bottom: 0;
+        }
+        li {
+            &:after {
+                content: ">";
+            }
+            &:last-child&:after {
+                content: "";
+            }
+            a {
+                color: @linkBlue;
+            }
+            span {
+                display: inline-block;
+                padding: 1em;
+            }
+        }
+    }
+}
+.main-column {
+    width: (@gridColumnWidth * 9) + (@gridGutterWidth * 8);
+}
+.sidebar {
+    width: (@gridColumnWidth * 3) + (@gridGutterWidth * 2);
+    margin-left: @gridGutterWidth / 2;
+    ul {
+        padding-left: 0;
+        list-style-type: none;
+    }
+    li {
+        margin-left: 0;
+    }
+    a {
+        border-top: 1px solid @borderColor;
+        padding: 0.5em 0;
+        display: block;
+    }
+     .home a {
+        border-top: none;
+    }
+}
+#foundation-index .home a,
+#foundation-about .about a {
+    color: @textColorPrimary;
+    font-weight: bold;
+}
+#foundation-index .home a:hover,
+#foundation-about .about a {
+    text-decoration: none;
+}

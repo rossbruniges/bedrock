@@ -276,6 +276,9 @@ MINIFY_BUNDLES = {
         'annual_2011': (
             'css/foundation/annual2011.less',
         ),
+        'foundation-pages': (
+            'css/foundation/pages.less',
+        ),
     },
     'js': {
         'site': (

@@ -1,0 +1,44 @@
+{# This Source Code Form is subject to the terms of the Mozilla Public
+ # License, v. 2.0. If a copy of the MPL was not distributed with this
+ # file, You can obtain one at http://mozilla.org/MPL/2.0/. #}
+
+{% extends "foundation/base.html" %}
+
+{% block page_title %}About the Mozilla Corporation Steering Committee{% endblock %}
+
+{% block body_id %}foundation-about{% endblock %}
+
+{% block breadcrumbs %}
+<nav class="breadcrumbs">
+    <ol>
+        <li><a href="{{ url('foundation.home') }}">Mozilla Foundation</a></li>
+        <li><a href="{{ url('foundation.about') }}">About</a></li>
+        <li><a href="{{ url('foundation.about-moco') }}">Mozilla Corporation</a></li>
+        <li><span>Steering Committee</span></li>
+    </ol>
+</nav>
+{% endblock %}
+
+{% block page_content %}
+    <h1 id="page-title">About the Mozilla Corporation Steering Committee</h1>
+    <p>The Mozilla Corporation's senior executive team is known as the Steering Committee. The Steering Committee is responsible for leadership, coordination among the various groups working together to produce Mozilla's consumer products. The Steering Committee stays abreast of market conditions, charts Mozilla's path through this environment, and sets the direction of Mozilla's general consumer product offerings. The Steering Committee also performs traditional management tasks such as hiring, planning, and resource allocation. It does so in ways that align with Mozilla's non-profit, open-source, community-based identity. The Steering Committee seeks to absorb, distill and reflect Mozilla community values in the exercise of its responsibilities.</p>
+
+    <p>More information about <a href="http://blog.lizardwrangler.com/2008/02/28/steering-committee/">the Steering Committee and its formation can be found in this blog post</a>. It has a standing weekly meeting, periodic multi-day sessions and meets on additionally on an as needed basis.</p>
+
+    <p>Members of the Steering Committee as of June 1, 2012 are listed below.</p>
+
+    <ul>
+        <li>Harvey Anderson, General Counsel, Business Development</li>
+        <li>Mitchell Baker, Office of the Chair</li>
+        <li>Chris Beard, Marketing</li>
+        <li>Debbie Cohen, People</li>
+        <li>Jim Cook, Finance</li>
+        <li>Brendan Eich, CTO</li>
+        <li>Li Gong, Mozilla Online and Mozilla Taiwan</li>
+        <li>Gary Kovacs, CEO</li>
+        <li>Damon Sicore, Engineering</li>
+        <li>Jay Sullivan, Products</li>
+        <li>Todd Simpson, Labs, Services</li>
+    </ul>
+
+{% endblock %}

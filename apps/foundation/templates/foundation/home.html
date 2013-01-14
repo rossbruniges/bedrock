@@ -1,0 +1,21 @@
+{# This Source Code Form is subject to the terms of the Mozilla Public
+ # License, v. 2.0. If a copy of the MPL was not distributed with this
+ # file, You can obtain one at http://mozilla.org/MPL/2.0/. #}
+
+{% extends "foundation/base.html" %}
+
+{% block page_title %}Mozilla Foundation{% endblock %}
+
+{% block body_id %}foundation-index{% endblock %}
+
+{% block page_content %}
+    <h1>The Mozilla Foundation</h1>
+
+    <p>The Mozilla Foundation is a non-profit organization that promotes <strong>openness, innovation and participation on the Internet</strong>.</p>
+
+    <p>Mozilla is best known for the <a href="{{ php_url('/firefox/') }}">Firefox</a> browser, but we advance our mission through other software <a  href="{{ url('mozorg.products') }}">projects</a>, <a href="{{ url('grants') }}">grants</a> and engagement efforts such as <a href="https://webmaker.org">Webmaker</a>.</p>
+
+    <p>Although thousands of people are part of Mozilla, the Mozilla Foundation itself is a small team of people. We provide core services to the Mozilla community and promote the <a href="{{ url('mozorg.mission') }}">values of an open Internet</a> to the broader world.</p>
+
+    <p>If you're interested in supporting our efforts, please consider <a href="https://donate.mozilla.org/page/contribute/openwebfund">making a donation</a> and <a href="{{ url('mozorg.contribute') }}">getting involved</a> with the Mozilla community.</p>
+{% endblock %}

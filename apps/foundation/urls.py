@@ -7,6 +7,10 @@ from mozorg.util import page
 
 
 urlpatterns = patterns('',
+    page('', 'foundation/home.html'),
+    page('about', 'foundation/about.html'),
+    page('about/moco', 'foundation/about-moco.html'),
+    page('about/moco/steering-committee', 'foundation/steering-committee.html'),
     page('annualreport/2011', 'foundation/annualreport/2011.html'),
     page('annualreport/2011/faq', 'foundation/annualreport/2011faq.html'),
 )
